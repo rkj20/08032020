@@ -1,0 +1,25 @@
+.image_cont{
+    height: 400px;
+    max-width: 100% !important;
+}
+.right-content{
+  text-align: left;
+}
+
+.widgets_div .text_div {
+    display: inline-block;
+    margin-left: 10px;
+}
+.widgets_div .icon_div {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+i.fa{
+    display: inline-block !important;
+    border-radius: 60px !important;
+    box-shadow: 0px 0px 2px #888 !important;
+    padding: 0.2em !important;
+    background-color: #7971ea;
+    color: black;
+}

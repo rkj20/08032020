@@ -1,0 +1,60 @@
+<div class="container msgUsBG">
+    <div class="row justify-content-center">
+        <div class="col-md-7">          
+            <h5 class="page-title mb-3">Message Us</h5>
+            <p class="mb-5">Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
+            <!-- div to show Sucess msg after form is sbmitted-->
+            <div *ngIf="msg !== ''" class="alert alert-success">
+                <strong>Thank You for contacting Us.</strong> {{msg}}
+            </div>
+            <!-- Contact us form with validaors and messages-->
+            <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                <div class="form-group row">
+                    <div class="col-md-6 mb-3 mb-lg-0">
+                        <input type="text" formControlName="firstname" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.firstname.errors }" placeholder="First name">
+                        <div *ngIf="submitted && f.firstname.errors" class="invalid-feedback">
+                            <div *ngIf="f.firstname.errors.required">First name is required</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" formControlName="lastname" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.lastname.errors }" placeholder="Last name">
+                        <div *ngIf="submitted && f.lastname.errors" class="invalid-feedback">
+                            <div *ngIf="f.lastname.errors.required">Last name is required</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-12">
+                        <input type="text" formControlName="subject" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.subject.errors }" placeholder="Subject">
+                        <div *ngIf="submitted && f.subject.errors" class="invalid-feedback">
+                            <div *ngIf="f.subject.errors.required">Subject is required</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-12">
+                        <input type="email" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" placeholder="Email">
+                        <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                            <div *ngIf="f.email.errors.required">Email is required</div>
+                            <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+                        </div>   
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-12">
+                        <textarea id="" cols="25" rows="10" formControlName="msg" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.msg.errors }"placeholder="Write your message here."></textarea>
+                        <div *ngIf="submitted && f.msg.errors" class="invalid-feedback">
+                            <div *ngIf="f.msg.errors.required">Message is required</div>
+                            <div *ngIf="f.msg.errors.minlength">Message must be at least 10 characters</div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-6">                
+                    <input type="submit" class="btn btn-primary sendMsg py-3 px-5 btn-block btn-pill" value="Send Message">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

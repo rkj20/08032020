@@ -1,0 +1,100 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~font-awesome/css/font-awesome.css';
+
+body {
+    line-height: 1.5;
+    color: gray;
+    font-weight: 250;
+    font-size: 1rem; 
+}
+
+.contact-style a span {
+    border-color: #7971ea;
+    padding: 14px 20px;
+    color: #fff;
+    background: #7971ea;
+    border-radius: 30px;
+    font-size: .7rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease; 
+  }
+  
+.contact-style a:hover span {
+  background: #4f45e3;
+  color: #fff; }
+
+.contact-style a.active {
+  border-bottom: none; 
+}
+
+.contact-style a.active > span {
+  background-color: #1c4b82;
+  color: #fff; 
+}
+
+.page-logo {
+    position: relative;
+    font-weight: 900;
+    font-size: 1.3rem; 
+}
+.navshadow{
+  box-shadow: 5px 5px 5px lightgray;
+}
+
+.page-logo a {
+    color:black; 
+}
+
+.homeNavSetting{
+  position: fixed;
+  z-index: 1000;    
+  width: 100%;  
+}
+
+@media screen and (max-width: 600px) {
+  .homeNavSetting {
+    background-color: grey;;
+  }
+}
+
+.homeNavSetting .nav-link{
+ color: white;
+}
+
+.homeNavSetting .navbar-collapse .navbar-nav .nav-link{
+  color: white;
+ }
+
+.nav-link{
+  text-align: right !important;
+  padding-right: 10px;
+  font-weight: bold;
+}
+    
+.page-title {
+    font-size: 3rem;
+    color: #000;
+    margin-bottom: 1.8rem;
+    font-weight: 900; 
+}
+
+@media (max-width: 991.98px) {
+  .page-title {
+    font-size: 1.5rem; 
+  }
+}
+  
+@mixin img-fluid {
+  // Part 1: Set a maximum relative to the parent
+  max-width: 100% !important;
+  // Part 2: Override the height to auto, otherwise images will be stretched
+  // when setting a width and height attribute on the img element.
+  height: auto !important;
+}
+
+.cont_box{
+    height: 100%;
+}  

@@ -1,0 +1,21 @@
+<nav class="navshadow navbar navbar-light navbar-expand-md bg-faded justify-content-center" id="appNavBar" >
+  <a id="navbrandId" routerLink="/Home" class="nav-link page-logo navbar-brand d-flex w-50 mr-auto">HarmanSchool</a>
+  <!-- For bedcrumb navbar-->
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <!-- Navbar menus-->
+  <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+      <ul class="page-menu main-menu navbar-nav mr-auto w-100 justify-content-center">
+          <li><a id="homeId" routerLink="/Home" class="nav-link">Home</a></li>
+          <li><a id="coursesId" routerLink="/Courses" class="nav-link">Courses</a></li>
+          <li><a id="programsId"routerLink="/Programs" class="nav-link">Programs</a></li>
+          <li><a id="teachersId"routerLink="/Teachers" class="nav-link">Teachers</a></li> 
+      </ul>
+      <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+          <li class="contact-style"><a routerLink="/ContactUs" class="nav-link"><span>Contact Us</span></a></li>
+      </ul>
+  </div>
+</nav>
+<!--Router otlet where application components will load depending upon routes-->
+<router-outlet></router-outlet>

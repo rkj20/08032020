@@ -1,0 +1,47 @@
+.blueback{
+    height: 400px;
+    background-color: #5262bf;
+}
+
+.course-style{
+    color: #fff;
+}
+
+.imgpos{
+    padding-right: 7px;
+}
+
+.course-cont{
+    z-index: 1;
+    height: 300px;
+    width: 300px;
+    margin: 10px !important;
+    padding: 0px !important;
+    -webkit-box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.3);
+    top: 0;
+    position: relative;    
+    background-color: #fff !important;
+    height: 100% !important;
+}
+
+.course-price {
+    position: absolute;
+    padding: 10px 15px;
+    background: #7921ea;
+    color: #fff;
+    top: -20px;
+    right: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px; 
+}
+
+.price_body{
+    background-color: blue;
+    text-align: right;
+}
+
+.course-inner-text {
+    position: relative;
+    font-size: small;
+}

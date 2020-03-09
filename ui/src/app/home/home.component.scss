@@ -1,0 +1,36 @@
+.home_back {
+    background-size: cover;
+    background-position: center; 
+}
+
+.home_page {
+    position: relative; 
+}
+
+.login-form {
+    padding: 40px;
+    background: #fff;
+    border-radius: 7px; 
+}
+    
+.home_page, .home_page .container > .row {
+      height: 100vh;
+      min-height: 650px; 
+}
+    
+.home_page.single-cover, .home_page.single-cover .container > .row {
+      height: 50vh;
+      min-height: 400px; 
+}
+
+.home_page h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 1.5rem; 
+}
+
+.home_page p {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 1.1rem; 
+}

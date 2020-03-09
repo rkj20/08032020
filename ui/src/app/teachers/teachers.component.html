@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-7 text-center">
+            <h5 class="page-title">Our Teachers</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam repellat aut neque! Doloribus sunt non aut reiciendis, vel recusandae obcaecati hic dicta repudiandae in quas quibusdam ullam, illum sed veniam!</p>
+        </div>
+    </div>
+    <div class="row" >
+        <!-- Loop through the teacher list and build the teacher details-->
+        <ng-container *ngFor="let teacher of teachers">
+            <div class="col-lg-4 col-md-6 px-2 mt-md-0 mt-4 cont_box">
+                <div class="wrap">                    
+                    <img class="blockico rounded-circle" alt="100x100" width="120" height="120" src={{teacher.teacherImg}}>
+                    <br>
+                    <br>
+                    <h5 class="let-spa mb-3">{{teacher.name}}</h5>                    
+                    <h6 class="let-spa mb-3">{{teacher.subject}} Teacher</h6>
+                    <br>
+                    <p>
+                        {{teacher.desc}}
+                    </p>
+                </div>
+            </div>  
+        </ng-container>          
+    </div>
+</div>

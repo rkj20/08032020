@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-7 mb-4 text-center" >
+          <h5 class="page-title">Our Programs</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam repellat aut neque! Doloribus sunt non aut reiciendis, vel recusandae obcaecati hic dicta repudiandae in quas quibusdam ullam, illum sed veniam!</p>
+        </div>
+    </div>
+    <!-- Loop through the program list and build the program details-->
+    <ng-container *ngFor="let program of programs">
+        <div class="row justify-content-center" >
+            <div class="col-md-8 col-xs-8 text-center">
+                <img class="image_cont" alt="100x100" src={{program.programImg}}>
+            </div>
+            <div class="col-md-3 col-xs-4 mb-4 right-content">
+                <br>
+                <h4>
+                    We Are Excellent In Education
+                </h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ullamcorper neque sem, vel finibus leo efficitur eget. Pellentesque felis diam, ornare at metus a, auctor consequat ligula. Integer eget mauris dui. 
+                </p>
+                <div class="widgets_div">
+                    <div class="icon_div">
+                        <span><i class="fa fa-graduation-cap"></i></span>
+                      </div>
+                      <div class="text_div">
+                        <span>{{program.numOfYearlyGrads | number}} Yearly Graduates</span><br>
+                      </div>
+                </div>
+                <div class="widgets_div">
+                    <div class="icon_div">
+                      <span><i class="fa fa-university"></i></span>
+                    </div>
+                    <div class="text_div">
+                      <span>{{program.numOfUniversity | number}} Universities Worldwide</span><br>
+                    </div>
+                </div>
+                <br> 
+              </div>              
+        </div>
+    </ng-container>
+</div>
