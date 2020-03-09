@@ -6,7 +6,7 @@
   		1. To run use visual studio code
      1. Install the packages using - npm istall
      1. Run the server using - node server.js
- 2. ui - Contains the I anpplication built in Angular 9
+ 2. ui - Contains the UI anpplication built in Angular 9
     1. To run use visual studio code
      1. Install the packages using - npm install
      1. Run the code using ng serve -o
